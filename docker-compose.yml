@@ -8,9 +8,9 @@ services:
     environment:
       - "VESTA_DOMAIN=your-vesta.panel-dns.com"
     volumes:
-      - "/opt/vestacp/backup:/backup"
-      - "/opt/vestacp/vesta:/vesta"
-      - "/opt/vestacp/home:/home"
+      - "./backup:/backup"
+      - "./vesta:/vesta"
+      - "./home:/home"
     ports:
       - "2222:22"
       - "80:80"
