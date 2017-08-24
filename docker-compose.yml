@@ -6,14 +6,14 @@ services:
     container_name: vesta
     cap_add: ['NET_RAW', 'NET_ADMIN']
     environment:
-      - "VESTA_DOMAIN=quankhu2.vn"
+      - "VESTA_DOMAIN=tech1412.com"
     volumes:
       - "./backup:/backup"
       - "./vesta:/vesta"
       - "./home:/home"
     ports:
       - "2222:22"
-      - "81:80"
+      - "80:80"
       - "443:443"
       - "8088:8083"
     labels:
